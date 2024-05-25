@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6943d76c53bfd00c69e5cabe0f330ec3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6943d76c53bfd00c69e5cabe0f330ec3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6943d76c53bfd00c69e5cabe0f330ec3 = L.map(
+                "map_6943d76c53bfd00c69e5cabe0f330ec3",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_601239f66a0df8627b5dcf9e016aee8c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_601239f66a0df8627b5dcf9e016aee8c.addTo(map_6943d76c53bfd00c69e5cabe0f330ec3);
+        
+    
+            var marker_cluster_37753112da476ef9d43a07a3dade1850 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_6bde7c395eccaf5183bc21310ff5b9a9 = L.marker(
+                [61.0666922, -107.991707],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_b15b5282c78bccd4f737cb6438d53eb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6bde7c395eccaf5183bc21310ff5b9a9.setIcon(icon_b15b5282c78bccd4f737cb6438d53eb3);
+        
+    
+        var popup_34de26a3e19d21062544e0925fb2ec33 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b24512970fb384cc701dbe643c83f2e = $(`<div id="html_1b24512970fb384cc701dbe643c83f2e" style="width: 100.0%; height: 100.0%;">Canada - Amarilla: $4164683.50</div>`)[0];
+                popup_34de26a3e19d21062544e0925fb2ec33.setContent(html_1b24512970fb384cc701dbe643c83f2e);
+            
+        
+
+        marker_6bde7c395eccaf5183bc21310ff5b9a9.bindPopup(popup_34de26a3e19d21062544e0925fb2ec33)
+        ;
+
+        
+    
+    
+            var marker_2c050fbf7720fff9973b78604a6bcf7d = L.marker(
+                [61.0666922, -107.991707],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_7d466c297396063d3143c19ae7c1bc5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2c050fbf7720fff9973b78604a6bcf7d.setIcon(icon_7d466c297396063d3143c19ae7c1bc5e);
+        
+    
+        var popup_64cdd93b4031ec2e49ae117fe64ce8a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8f18da59f1f5d388b542be40f742ada = $(`<div id="html_a8f18da59f1f5d388b542be40f742ada" style="width: 100.0%; height: 100.0%;">Canada - Carretera: $2825853.50</div>`)[0];
+                popup_64cdd93b4031ec2e49ae117fe64ce8a2.setContent(html_a8f18da59f1f5d388b542be40f742ada);
+            
+        
+
+        marker_2c050fbf7720fff9973b78604a6bcf7d.bindPopup(popup_64cdd93b4031ec2e49ae117fe64ce8a2)
+        ;
+
+        
+    
+    
+            var marker_7755e2c99d530806b359d613219577fe = L.marker(
+                [61.0666922, -107.991707],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_11a20a833037d63d1f736d0a2d8e5763 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7755e2c99d530806b359d613219577fe.setIcon(icon_11a20a833037d63d1f736d0a2d8e5763);
+        
+    
+        var popup_c272053b58622f2637d84026436ea1ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ba7432d7f72987e0233a47622341544 = $(`<div id="html_4ba7432d7f72987e0233a47622341544" style="width: 100.0%; height: 100.0%;">Canada - Montana: $2982114.50</div>`)[0];
+                popup_c272053b58622f2637d84026436ea1ae.setContent(html_4ba7432d7f72987e0233a47622341544);
+            
+        
+
+        marker_7755e2c99d530806b359d613219577fe.bindPopup(popup_c272053b58622f2637d84026436ea1ae)
+        ;
+
+        
+    
+    
+            var marker_6265dc11e240024d9149eea0c6da75de = L.marker(
+                [61.0666922, -107.991707],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_b27ef2fad2c36ce66f8311a612974dfa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6265dc11e240024d9149eea0c6da75de.setIcon(icon_b27ef2fad2c36ce66f8311a612974dfa);
+        
+    
+        var popup_df26b6d6f815f94ecc2b28575548095e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cec36b4fa5d4c464d9bddba6b5cda030 = $(`<div id="html_cec36b4fa5d4c464d9bddba6b5cda030" style="width: 100.0%; height: 100.0%;">Canada - Paseo: $8172612.00</div>`)[0];
+                popup_df26b6d6f815f94ecc2b28575548095e.setContent(html_cec36b4fa5d4c464d9bddba6b5cda030);
+            
+        
+
+        marker_6265dc11e240024d9149eea0c6da75de.bindPopup(popup_df26b6d6f815f94ecc2b28575548095e)
+        ;
+
+        
+    
+    
+            var marker_baf15d5b7fda60e66e8f9ecc83d8f251 = L.marker(
+                [61.0666922, -107.991707],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_dd959a15b069b72a78d89c679b5dbd6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_baf15d5b7fda60e66e8f9ecc83d8f251.setIcon(icon_dd959a15b069b72a78d89c679b5dbd6a);
+        
+    
+        var popup_afa3c5e9b7ddb20ce08334e80aae769e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f719f5528fb6ac793665137298d83571 = $(`<div id="html_f719f5528fb6ac793665137298d83571" style="width: 100.0%; height: 100.0%;">Canada - VTT: $5126513.00</div>`)[0];
+                popup_afa3c5e9b7ddb20ce08334e80aae769e.setContent(html_f719f5528fb6ac793665137298d83571);
+            
+        
+
+        marker_baf15d5b7fda60e66e8f9ecc83d8f251.bindPopup(popup_afa3c5e9b7ddb20ce08334e80aae769e)
+        ;
+
+        
+    
+    
+            var marker_2a33f0ddf492d795433bd36d70bcd109 = L.marker(
+                [61.0666922, -107.991707],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_0dc09fb96f362085039e948ca761f803 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2a33f0ddf492d795433bd36d70bcd109.setIcon(icon_0dc09fb96f362085039e948ca761f803);
+        
+    
+        var popup_ffeffe598ba0b6413515c59603369e92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_291ef334efb0959e4758286512a3051c = $(`<div id="html_291ef334efb0959e4758286512a3051c" style="width: 100.0%; height: 100.0%;">Canada - Velo: $3660387.00</div>`)[0];
+                popup_ffeffe598ba0b6413515c59603369e92.setContent(html_291ef334efb0959e4758286512a3051c);
+            
+        
+
+        marker_2a33f0ddf492d795433bd36d70bcd109.bindPopup(popup_ffeffe598ba0b6413515c59603369e92)
+        ;
+
+        
+    
+    
+            var marker_f9f78aa6bb37ae43c0baef52917305fc = L.marker(
+                [46.603354, 1.8883335],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_d2df9aff9ed83883066cbd177bca6299 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f9f78aa6bb37ae43c0baef52917305fc.setIcon(icon_d2df9aff9ed83883066cbd177bca6299);
+        
+    
+        var popup_6be4c1b8d8137b9054003c36d4815be6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89a2e573e9e5df324f847f29fe11c065 = $(`<div id="html_89a2e573e9e5df324f847f29fe11c065" style="width: 100.0%; height: 100.0%;">France - Amarilla: $4318664.00</div>`)[0];
+                popup_6be4c1b8d8137b9054003c36d4815be6.setContent(html_89a2e573e9e5df324f847f29fe11c065);
+            
+        
+
+        marker_f9f78aa6bb37ae43c0baef52917305fc.bindPopup(popup_6be4c1b8d8137b9054003c36d4815be6)
+        ;
+
+        
+    
+    
+            var marker_029926f63c5ea2714471f134495ea93c = L.marker(
+                [46.603354, 1.8883335],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_2ee7f5172a6fbf741bb4010352dc2d41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_029926f63c5ea2714471f134495ea93c.setIcon(icon_2ee7f5172a6fbf741bb4010352dc2d41);
+        
+    
+        var popup_f62a3c78c824afe52cd4bba1c390f34b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a90dc150321e13ff0442759c826b6e2 = $(`<div id="html_6a90dc150321e13ff0442759c826b6e2" style="width: 100.0%; height: 100.0%;">France - Carretera: $3687829.50</div>`)[0];
+                popup_f62a3c78c824afe52cd4bba1c390f34b.setContent(html_6a90dc150321e13ff0442759c826b6e2);
+            
+        
+
+        marker_029926f63c5ea2714471f134495ea93c.bindPopup(popup_f62a3c78c824afe52cd4bba1c390f34b)
+        ;
+
+        
+    
+    
+            var marker_14162c04e92e372b5ca19e0dcfdef9b8 = L.marker(
+                [46.603354, 1.8883335],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_d396120565709e7ab7a01d435060d343 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_14162c04e92e372b5ca19e0dcfdef9b8.setIcon(icon_d396120565709e7ab7a01d435060d343);
+        
+    
+        var popup_b35e4b3665def9ec4e083c1b4a19bf57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d4d36593ff9aa0b227f7498b50b2bc5 = $(`<div id="html_7d4d36593ff9aa0b227f7498b50b2bc5" style="width: 100.0%; height: 100.0%;">France - Montana: $3843216.00</div>`)[0];
+                popup_b35e4b3665def9ec4e083c1b4a19bf57.setContent(html_7d4d36593ff9aa0b227f7498b50b2bc5);
+            
+        
+
+        marker_14162c04e92e372b5ca19e0dcfdef9b8.bindPopup(popup_b35e4b3665def9ec4e083c1b4a19bf57)
+        ;
+
+        
+    
+    
+            var marker_85989a85cfd40297a12853febd1fb432 = L.marker(
+                [46.603354, 1.8883335],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_96da5121659fd4c64d98c4fa1e6753f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_85989a85cfd40297a12853febd1fb432.setIcon(icon_96da5121659fd4c64d98c4fa1e6753f4);
+        
+    
+        var popup_ffea58f3f915740ded867f613a30afb6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43c956992b1c0b399aa16d0b1fc2cc8d = $(`<div id="html_43c956992b1c0b399aa16d0b1fc2cc8d" style="width: 100.0%; height: 100.0%;">France - Paseo: $5984767.00</div>`)[0];
+                popup_ffea58f3f915740ded867f613a30afb6.setContent(html_43c956992b1c0b399aa16d0b1fc2cc8d);
+            
+        
+
+        marker_85989a85cfd40297a12853febd1fb432.bindPopup(popup_ffea58f3f915740ded867f613a30afb6)
+        ;
+
+        
+    
+    
+            var marker_1f8d2b8f43d07c7f81fdbacdae073c72 = L.marker(
+                [46.603354, 1.8883335],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_af30188cf7c1b311a8f277306b8c5c3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1f8d2b8f43d07c7f81fdbacdae073c72.setIcon(icon_af30188cf7c1b311a8f277306b8c5c3f);
+        
+    
+        var popup_5efe33e7eef3d57764ccb98322f26d66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e38bcb01c0085b72ceeba02fadb2c16e = $(`<div id="html_e38bcb01c0085b72ceeba02fadb2c16e" style="width: 100.0%; height: 100.0%;">France - VTT: $4002763.50</div>`)[0];
+                popup_5efe33e7eef3d57764ccb98322f26d66.setContent(html_e38bcb01c0085b72ceeba02fadb2c16e);
+            
+        
+
+        marker_1f8d2b8f43d07c7f81fdbacdae073c72.bindPopup(popup_5efe33e7eef3d57764ccb98322f26d66)
+        ;
+
+        
+    
+    
+            var marker_311cc2daf81260cba44c6a8b972678cd = L.marker(
+                [46.603354, 1.8883335],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_889e489eddd3aab9faf42f21dbc76864 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_311cc2daf81260cba44c6a8b972678cd.setIcon(icon_889e489eddd3aab9faf42f21dbc76864);
+        
+    
+        var popup_4470f7fadbb8b8ff7bc2aa2dde9a33bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48e78e2b4e873413c948a5b39523e7b8 = $(`<div id="html_48e78e2b4e873413c948a5b39523e7b8" style="width: 100.0%; height: 100.0%;">France - Velo: $4244434.50</div>`)[0];
+                popup_4470f7fadbb8b8ff7bc2aa2dde9a33bc.setContent(html_48e78e2b4e873413c948a5b39523e7b8);
+            
+        
+
+        marker_311cc2daf81260cba44c6a8b972678cd.bindPopup(popup_4470f7fadbb8b8ff7bc2aa2dde9a33bc)
+        ;
+
+        
+    
+    
+            var marker_29052eaeeb01a0f00b9de8db327a0730 = L.marker(
+                [51.1638175, 10.4478313],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_c18ac3a6dfa2562867477215e8114e3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_29052eaeeb01a0f00b9de8db327a0730.setIcon(icon_c18ac3a6dfa2562867477215e8114e3a);
+        
+    
+        var popup_5a9b78c6d68031273b7e23d3c81dd599 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc5689e38867b2bb1553d274b7951f7f = $(`<div id="html_bc5689e38867b2bb1553d274b7951f7f" style="width: 100.0%; height: 100.0%;">Germany - Amarilla: $4123204.50</div>`)[0];
+                popup_5a9b78c6d68031273b7e23d3c81dd599.setContent(html_bc5689e38867b2bb1553d274b7951f7f);
+            
+        
+
+        marker_29052eaeeb01a0f00b9de8db327a0730.bindPopup(popup_5a9b78c6d68031273b7e23d3c81dd599)
+        ;
+
+        
+    
+    
+            var marker_8db3ae85fbf4e841393183944848a8c6 = L.marker(
+                [51.1638175, 10.4478313],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_94aaf77d31fa6fad5a55a6cefe1ea2b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8db3ae85fbf4e841393183944848a8c6.setIcon(icon_94aaf77d31fa6fad5a55a6cefe1ea2b9);
+        
+    
+        var popup_58f3cc040197a5b706a1519da40b0b5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f82b8c314b5db89ae29c44f8fba77844 = $(`<div id="html_f82b8c314b5db89ae29c44f8fba77844" style="width: 100.0%; height: 100.0%;">Germany - Carretera: $3306376.00</div>`)[0];
+                popup_58f3cc040197a5b706a1519da40b0b5a.setContent(html_f82b8c314b5db89ae29c44f8fba77844);
+            
+        
+
+        marker_8db3ae85fbf4e841393183944848a8c6.bindPopup(popup_58f3cc040197a5b706a1519da40b0b5a)
+        ;
+
+        
+    
+    
+            var marker_36d34f897d37672e3d53efe25a8487a2 = L.marker(
+                [51.1638175, 10.4478313],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_1b02cb1c97f79b6fe2f9617e312f0e1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_36d34f897d37672e3d53efe25a8487a2.setIcon(icon_1b02cb1c97f79b6fe2f9617e312f0e1c);
+        
+    
+        var popup_7b543e3ac56c8749293799f014855c18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f33d73982dfdcd5a0b4a82e7227f75ec = $(`<div id="html_f33d73982dfdcd5a0b4a82e7227f75ec" style="width: 100.0%; height: 100.0%;">Germany - Montana: $3798355.00</div>`)[0];
+                popup_7b543e3ac56c8749293799f014855c18.setContent(html_f33d73982dfdcd5a0b4a82e7227f75ec);
+            
+        
+
+        marker_36d34f897d37672e3d53efe25a8487a2.bindPopup(popup_7b543e3ac56c8749293799f014855c18)
+        ;
+
+        
+    
+    
+            var marker_e85fa520912c37d385a1c14f55536d26 = L.marker(
+                [51.1638175, 10.4478313],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_a9e24e6e5f4437746ccc1ad11af4ac0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e85fa520912c37d385a1c14f55536d26.setIcon(icon_a9e24e6e5f4437746ccc1ad11af4ac0f);
+        
+    
+        var popup_3f48d315b0c060a1d2555af0a9817130 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76242c704158aa17bbc823d030b8eb82 = $(`<div id="html_76242c704158aa17bbc823d030b8eb82" style="width: 100.0%; height: 100.0%;">Germany - Paseo: $5555838.00</div>`)[0];
+                popup_3f48d315b0c060a1d2555af0a9817130.setContent(html_76242c704158aa17bbc823d030b8eb82);
+            
+        
+
+        marker_e85fa520912c37d385a1c14f55536d26.bindPopup(popup_3f48d315b0c060a1d2555af0a9817130)
+        ;
+
+        
+    
+    
+            var marker_728e5c38e6546817cd9bb338ce50ee99 = L.marker(
+                [51.1638175, 10.4478313],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_9c267c3592f3225dc9f383d5df42a374 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_728e5c38e6546817cd9bb338ce50ee99.setIcon(icon_9c267c3592f3225dc9f383d5df42a374);
+        
+    
+        var popup_d9c503c163f9e9287d73650810d384f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_437a40459d5222d299275c2f8d25437f = $(`<div id="html_437a40459d5222d299275c2f8d25437f" style="width: 100.0%; height: 100.0%;">Germany - VTT: $3499791.00</div>`)[0];
+                popup_d9c503c163f9e9287d73650810d384f2.setContent(html_437a40459d5222d299275c2f8d25437f);
+            
+        
+
+        marker_728e5c38e6546817cd9bb338ce50ee99.bindPopup(popup_d9c503c163f9e9287d73650810d384f2)
+        ;
+
+        
+    
+    
+            var marker_ede83fb319f93dc90a8366eaa4ad5bfa = L.marker(
+                [51.1638175, 10.4478313],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_1dfe9f760149015cfcc24e0ae905b640 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ede83fb319f93dc90a8366eaa4ad5bfa.setIcon(icon_1dfe9f760149015cfcc24e0ae905b640);
+        
+    
+        var popup_03b1c4f27ff44e2730eb035aaad6be2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2231a8afe3d38fd84dbb863f13e5150a = $(`<div id="html_2231a8afe3d38fd84dbb863f13e5150a" style="width: 100.0%; height: 100.0%;">Germany - Velo: $4637903.00</div>`)[0];
+                popup_03b1c4f27ff44e2730eb035aaad6be2b.setContent(html_2231a8afe3d38fd84dbb863f13e5150a);
+            
+        
+
+        marker_ede83fb319f93dc90a8366eaa4ad5bfa.bindPopup(popup_03b1c4f27ff44e2730eb035aaad6be2b)
+        ;
+
+        
+    
+    
+            var marker_450e1903aabfea32cef550d3747ad73b = L.marker(
+                [19.4326296, -99.1331785],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_8586fbb5a488a0003af90f0405b9f9d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_450e1903aabfea32cef550d3747ad73b.setIcon(icon_8586fbb5a488a0003af90f0405b9f9d4);
+        
+    
+        var popup_9de82b05bbe431d71a9b9da78a16ea0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a840e3e8f8f2dddf16ee989ab84bb079 = $(`<div id="html_a840e3e8f8f2dddf16ee989ab84bb079" style="width: 100.0%; height: 100.0%;">Mexico - Amarilla: $3303196.00</div>`)[0];
+                popup_9de82b05bbe431d71a9b9da78a16ea0b.setContent(html_a840e3e8f8f2dddf16ee989ab84bb079);
+            
+        
+
+        marker_450e1903aabfea32cef550d3747ad73b.bindPopup(popup_9de82b05bbe431d71a9b9da78a16ea0b)
+        ;
+
+        
+    
+    
+            var marker_5f3df261e0ef66615c36a97d113c2329 = L.marker(
+                [19.4326296, -99.1331785],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_14712dba3f4f609a1b2b5e0d6e9a417c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5f3df261e0ef66615c36a97d113c2329.setIcon(icon_14712dba3f4f609a1b2b5e0d6e9a417c);
+        
+    
+        var popup_4f6757f9e22697766859f6a1f0b74770 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a72ac96a3d7906f8bc0b5c7639cb1c1b = $(`<div id="html_a72ac96a3d7906f8bc0b5c7639cb1c1b" style="width: 100.0%; height: 100.0%;">Mexico - Carretera: $3112011.00</div>`)[0];
+                popup_4f6757f9e22697766859f6a1f0b74770.setContent(html_a72ac96a3d7906f8bc0b5c7639cb1c1b);
+            
+        
+
+        marker_5f3df261e0ef66615c36a97d113c2329.bindPopup(popup_4f6757f9e22697766859f6a1f0b74770)
+        ;
+
+        
+    
+    
+            var marker_930583575c01c08e15f777ddddf356b0 = L.marker(
+                [19.4326296, -99.1331785],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_e9dda18ce547a6ca3b3c3ab8f695ae4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_930583575c01c08e15f777ddddf356b0.setIcon(icon_e9dda18ce547a6ca3b3c3ab8f695ae4c);
+        
+    
+        var popup_7c7b39ae5a14049cb8f4e94b583c5387 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_993d9a9963d00e7919be9161b4457474 = $(`<div id="html_993d9a9963d00e7919be9161b4457474" style="width: 100.0%; height: 100.0%;">Mexico - Montana: $2052575.00</div>`)[0];
+                popup_7c7b39ae5a14049cb8f4e94b583c5387.setContent(html_993d9a9963d00e7919be9161b4457474);
+            
+        
+
+        marker_930583575c01c08e15f777ddddf356b0.bindPopup(popup_7c7b39ae5a14049cb8f4e94b583c5387)
+        ;
+
+        
+    
+    
+            var marker_e6ac0fca5c1d0bad44ac520ca9bf7478 = L.marker(
+                [19.4326296, -99.1331785],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_868f2e7630c38160732c6fd6229f0573 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e6ac0fca5c1d0bad44ac520ca9bf7478.setIcon(icon_868f2e7630c38160732c6fd6229f0573);
+        
+    
+        var popup_46496d28bd13fb96f437c673ffe8506c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_863aba0d2cc33ad684778ac766b963df = $(`<div id="html_863aba0d2cc33ad684778ac766b963df" style="width: 100.0%; height: 100.0%;">Mexico - Paseo: $8432206.00</div>`)[0];
+                popup_46496d28bd13fb96f437c673ffe8506c.setContent(html_863aba0d2cc33ad684778ac766b963df);
+            
+        
+
+        marker_e6ac0fca5c1d0bad44ac520ca9bf7478.bindPopup(popup_46496d28bd13fb96f437c673ffe8506c)
+        ;
+
+        
+    
+    
+            var marker_9a62740bd2af4b9df53282778da23fc4 = L.marker(
+                [19.4326296, -99.1331785],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_426b444c671422270db2b7ea2f19b351 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9a62740bd2af4b9df53282778da23fc4.setIcon(icon_426b444c671422270db2b7ea2f19b351);
+        
+    
+        var popup_3bc24e6b7d0d9badeabb295e7ffb02de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9131cc9845137d5e3e47c3020e16d6a = $(`<div id="html_f9131cc9845137d5e3e47c3020e16d6a" style="width: 100.0%; height: 100.0%;">Mexico - VTT: $3316574.00</div>`)[0];
+                popup_3bc24e6b7d0d9badeabb295e7ffb02de.setContent(html_f9131cc9845137d5e3e47c3020e16d6a);
+            
+        
+
+        marker_9a62740bd2af4b9df53282778da23fc4.bindPopup(popup_3bc24e6b7d0d9badeabb295e7ffb02de)
+        ;
+
+        
+    
+    
+            var marker_0f99edaa5188046a99f606c0fed594b4 = L.marker(
+                [19.4326296, -99.1331785],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_69beb910fe5bfbd702768c6809fb4326 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0f99edaa5188046a99f606c0fed594b4.setIcon(icon_69beb910fe5bfbd702768c6809fb4326);
+        
+    
+        var popup_cca4e0ea72a3787fb1ee58ae193b6463 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66099316a593a1ee60319c3d8a33c332 = $(`<div id="html_66099316a593a1ee60319c3d8a33c332" style="width: 100.0%; height: 100.0%;">Mexico - Velo: $2510373.00</div>`)[0];
+                popup_cca4e0ea72a3787fb1ee58ae193b6463.setContent(html_66099316a593a1ee60319c3d8a33c332);
+            
+        
+
+        marker_0f99edaa5188046a99f606c0fed594b4.bindPopup(popup_cca4e0ea72a3787fb1ee58ae193b6463)
+        ;
+
+        
+    
+    
+            var marker_05aa24e2540dfe15c82e120d0649543c = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_593d87b2b918ada9e51e759d1a432355 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_05aa24e2540dfe15c82e120d0649543c.setIcon(icon_593d87b2b918ada9e51e759d1a432355);
+        
+    
+        var popup_cfcb6b281bb400aff282ee213ec50daf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dff8eee0fc8f8506647c59dc8e329444 = $(`<div id="html_dff8eee0fc8f8506647c59dc8e329444" style="width: 100.0%; height: 100.0%;">United States of America - Amarilla: $3127531.50</div>`)[0];
+                popup_cfcb6b281bb400aff282ee213ec50daf.setContent(html_dff8eee0fc8f8506647c59dc8e329444);
+            
+        
+
+        marker_05aa24e2540dfe15c82e120d0649543c.bindPopup(popup_cfcb6b281bb400aff282ee213ec50daf)
+        ;
+
+        
+    
+    
+            var marker_feea56661521869d27f3a025f3fa5b3b = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_dffa0507bca7a7aac12c5c1712b5d8d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_feea56661521869d27f3a025f3fa5b3b.setIcon(icon_dffa0507bca7a7aac12c5c1712b5d8d8);
+        
+    
+        var popup_af789d79426803829241f9dc78bbff8b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90bced611da791af8de66466341abd4d = $(`<div id="html_90bced611da791af8de66466341abd4d" style="width: 100.0%; height: 100.0%;">United States of America - Carretera: $2005450.50</div>`)[0];
+                popup_af789d79426803829241f9dc78bbff8b.setContent(html_90bced611da791af8de66466341abd4d);
+            
+        
+
+        marker_feea56661521869d27f3a025f3fa5b3b.bindPopup(popup_af789d79426803829241f9dc78bbff8b)
+        ;
+
+        
+    
+    
+            var marker_c9b2128b57f6d1f21c885410d7c36713 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_95170973d7286a34b0b199fa93cd988c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c9b2128b57f6d1f21c885410d7c36713.setIcon(icon_95170973d7286a34b0b199fa93cd988c);
+        
+    
+        var popup_7b104fca8828fa7e4339277f706e12b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a3fb2283d163182a7882253bb3a4250 = $(`<div id="html_5a3fb2283d163182a7882253bb3a4250" style="width: 100.0%; height: 100.0%;">United States of America - Montana: $3873574.00</div>`)[0];
+                popup_7b104fca8828fa7e4339277f706e12b5.setContent(html_5a3fb2283d163182a7882253bb3a4250);
+            
+        
+
+        marker_c9b2128b57f6d1f21c885410d7c36713.bindPopup(popup_7b104fca8828fa7e4339277f706e12b5)
+        ;
+
+        
+    
+    
+            var marker_6b862f8a32ffb34419275246786472d4 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_c015bd0de1a07a2ecb4336a448eafc2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6b862f8a32ffb34419275246786472d4.setIcon(icon_c015bd0de1a07a2ecb4336a448eafc2f);
+        
+    
+        var popup_c8ac36dc6e3fba4d45c10cdd2460fcc9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92fbdf91c8c11a07a69bfdf28328853b = $(`<div id="html_92fbdf91c8c11a07a69bfdf28328853b" style="width: 100.0%; height: 100.0%;">United States of America - Paseo: $7466239.00</div>`)[0];
+                popup_c8ac36dc6e3fba4d45c10cdd2460fcc9.setContent(html_92fbdf91c8c11a07a69bfdf28328853b);
+            
+        
+
+        marker_6b862f8a32ffb34419275246786472d4.bindPopup(popup_c8ac36dc6e3fba4d45c10cdd2460fcc9)
+        ;
+
+        
+    
+    
+            var marker_660058a1f45a86d9122f5efde521d952 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_9abba0df424894d96ffa41b3d27b4375 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_660058a1f45a86d9122f5efde521d952.setIcon(icon_9abba0df424894d96ffa41b3d27b4375);
+        
+    
+        var popup_a6f588027c875809ad6d104a4dfec00d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff7ca087006d356b9ca2f37c3d27a997 = $(`<div id="html_ff7ca087006d356b9ca2f37c3d27a997" style="width: 100.0%; height: 100.0%;">United States of America - VTT: $6022892.00</div>`)[0];
+                popup_a6f588027c875809ad6d104a4dfec00d.setContent(html_ff7ca087006d356b9ca2f37c3d27a997);
+            
+        
+
+        marker_660058a1f45a86d9122f5efde521d952.bindPopup(popup_a6f588027c875809ad6d104a4dfec00d)
+        ;
+
+        
+    
+    
+            var marker_f693e7f9d3247d6adadf7110c0867b09 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(marker_cluster_37753112da476ef9d43a07a3dade1850);
+        
+    
+            var icon_47b99126a98d4f5bca1cd8408a4da4f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f693e7f9d3247d6adadf7110c0867b09.setIcon(icon_47b99126a98d4f5bca1cd8408a4da4f8);
+        
+    
+        var popup_9bc7f31f1aeb8385855f2262d7ddf127 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1259cbe2ae3301682a2349ff6932e037 = $(`<div id="html_1259cbe2ae3301682a2349ff6932e037" style="width: 100.0%; height: 100.0%;">United States of America - Velo: $4773671.00</div>`)[0];
+                popup_9bc7f31f1aeb8385855f2262d7ddf127.setContent(html_1259cbe2ae3301682a2349ff6932e037);
+            
+        
+
+        marker_f693e7f9d3247d6adadf7110c0867b09.bindPopup(popup_9bc7f31f1aeb8385855f2262d7ddf127)
+        ;
+
+        
+    
+    
+            marker_cluster_37753112da476ef9d43a07a3dade1850.addTo(map_6943d76c53bfd00c69e5cabe0f330ec3);
+        
+</script>
+</html>
